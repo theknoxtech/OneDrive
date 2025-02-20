@@ -1,4 +1,3 @@
-# Parameter help description
 param (
     [switch]$SaveToFile
 )
