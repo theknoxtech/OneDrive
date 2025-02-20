@@ -1,3 +1,39 @@
+<#
+.SYNOPSIS
+
+This script will find OneDrive Shortcuts that have been added to OneDrive by using the Add Shortcut to OneDrive from OneDrive in the browser.
+
+
+.DESCRIPTION
+
+This script recursively goes through the default OneDrive location and checks the desktop.ini file for specific index numbers
+These number are associated with OneDrive Shortcuts specifically
+
+Author: Jon Witherspoon
+Last Modified: 02/20/25
+
+
+.PARAMETER SavetoFile
+Optional parameter to allow the user to save the output to the current working directory
+
+.INPUTS
+
+None. You cannot pipe objects to this script.
+
+
+.OUTPUTS
+Outputs to the console by default
+If Savetofile is used it outputs OneDriveShortcuts.txt to the current working directory
+
+
+.EXAMPLE
+.\Find-OneDriveShortcuts
+
+.EXAMPLE
+.\Find-OneDriveShortcuts -Savetofile
+#>
+
+
 param (
     [switch]$SaveToFile
 )
